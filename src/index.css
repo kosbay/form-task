@@ -1,13 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+line-height: 1;
+}
+
+input, select {
+vertical-align:middle;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Rambla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F4F8FA;
+  min-height: 100vh;
+  margin-top: 120px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-text-cont {
+  display: flex;
+  justify-content: center;
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+
+.arrow-logo {
+}
+
+.main-title {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #2F80ED;
+  margin-left: 60px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 45px 43px;
+  margin: auto;
+  background: #FFFEFE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: #102C51;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+input {
+  font-family: 'Rambla', sans-serif;
+  height: 42px;
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  text-align: center;
+  color: #102C51;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 22px;
+  margin-bottom: 2px;
+}
+
+.text-input {
+  font-size: 18px;
+}
+
+.text-input::before {
+  content: "Look at this orange box.";
+  background-color: #FFBA10;
+  border-color: black;
+  border-style: dotted;
+}
+
+.date-input {
+  font-size: 18px;
+}
+
+.output-card {
+  margin-top: 32px;
+  border: 1px solid #CFCFCF;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.03));
+  border-radius: 4px;
+}
+
+.output-card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px 25px;
+}
+
+.output-card-bottom {
+  font-size: 10px;
+  background: #F4F8FA;
+  padding: 10px 25px;
+}
+
+.card-label {
+  margin-top: 0;
+}
+
+.card-cost {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2F80ED;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.switch-label {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.bold-text {
+  font-weight: bold;
 }
